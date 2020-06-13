@@ -14,7 +14,7 @@ mysql表自动同步工具，从github.com/hidu/mysql-schema-sync项目fork，�
 
 
 ### 安装
->go get -u github.com/hidu/mysql-schema-sync
+>go get -u github.com/gudlike/mysql-sync
 
 
 ### 配置
@@ -61,12 +61,12 @@ email ： 同步完成后发送邮件通知信息
 ### 运行
 ### 直接运行
 ```
-mysql-schema-sync -conf mydb_conf.json -sync
+mysql-sync -conf mydb_conf.json -sync
 ```
  
 ### 预览并生成变更sql
 ```
-mysql-schema-sync -conf mydb_conf.json 2>/dev/null >db_alter.sql
+mysql-sync -conf mydb_conf.json 2>/dev/null >db_alter.sql
 ```
 ### 使用shell调度
 ```
@@ -85,12 +85,12 @@ log存储在当前的log目录中。
 
 ### 参数说明
 <code>
-mysql-schema-sync [-conf] [-dest] [-source] [-sync] [-drop]
+mysql-sync [-conf] [-dest] [-source] [-sync] [-drop]
 </code>
 
 说明：
 <pre><code>
-# mysql-schema-sync -help  
+# mysql-sync -help  
   -conf string
         配置文件名称
   -dest string
