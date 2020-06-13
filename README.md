@@ -1,5 +1,5 @@
-# mysql-schema-sync
-mysql表结构自动同步工具  
+# mysql-sync
+mysql表自动同步工具，从github.com/hidu/mysql-schema-sync项目fork，除了检查表结构区别，也想检查部分表数据(未完)
 
 用于将 `线上` 数据库结构<b>变化</b>同步到 `本地环境`!  
 支持功能：  
